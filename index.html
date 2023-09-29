@@ -4,85 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!--CSS Propio-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Titulo de la pestaña del Navegador-->
     <title>Khaby</title>
 </head>
 
 <body>
-    <div class="nav__logo">
-        <a href="index.html"><img src="img/lijheam.png" alt="logo" class="img__logo"></a>
+
+    <!--NavBar Inicio-->
+    <header class="fondo__navbar">
+
+        <!--Logo khaby-->
+        <div class="nav__logo">
+            <a href="index.html"><img src=alt="logo" class="img__logo"></a>
+        </div>
+
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a href="index.html"><img src="img/nombre__logo.png" alt="logo" class="nombre__logo"></a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--NavBar Fin-->
+
+    <!--Inicio Parte 1 de la pagina-->
+
+    <div class="fondo__logo_completo">
+        <div>
+            <p>asdas
+
+            </p>
+        </div>
     </div>
 
-    <form autocomplete="off" class="buscar">
-        <div>
-            <input class="lupa_uno" type="text" name="q" placeholder="Buscar">
-        </div>
-    </form>
 
-
-    <input type="checkbox" id="btn-menu">
-    <label for="btn-menu"><img src="img/menu.svg" alt="barra" class="img__barra">
-    </label>
-    <nav class="nav__menu">
-        <ul>
-            <li class="nav__item">
-                <a class="nav__link" href="index.html">
-                    <img src="img/inicio_house.png" alt="inicio" class="nav__img">
-                    <span class="nav__barra">Inicio</span>
-                </a>
-            </li>
-
-            <li class="nav__item">
-                <a class="nav__link" href="pages/Ofertas.html">
-                    <img src="img/descuento.png" alt="descuento" class="nav__img">
-                    <span>Ofertas</span>
-                </a>
-            </li>
-
-            <li class="nav__item">
-                <a class="nav__link" href="pages/productos.html">
-                    <img src="img/historial.png" alt="historial" class="nav__img">
-                    <span>Inicia Sesion</span>
-                </a>
-            </li>
-
-            <li class="nav__item">
-                <a class="nav__link" href="pages/productos.html">
-                    <img src="img/auriculares.png" alt="Ayuda" class="nav__img">
-                    <span>Crear cuenta</span>
-                </a>
-            </li>
-
-            <li class="nav__item">
-                <a class="nav__link" href="pages/productos.html">
-                    <img src="img/moda.png" alt="moda" class="nav__img">
-                    <span>Moda</span>
-                </a>
-            </li>
-
-            <li class="nav__item">
-                <a class="nav__link" href="pages/productos.html">
-                    <img src="img/masvendido.png" alt="estrella" class="nav__img">
-                    <span>Mas vendidos</span>
-                </a>
-            </li>
-
-            <li class="nav__item">
-                <a class="nav__link" href="pages/productos.html">
-                    <img src="img/tienda.png" alt="tienda" class="nav__img">
-                    <span>Tiendas Oficiales</span>
-                </a>
-            </li>
-
-            <li class="nav__item">
-                <a class="nav__link" href="pages/productos.html">
-                    <img src="img/categoria.png" alt="categoria" class="nav__img">
-                    <span>Categorias</span>
-                </a>
-            </li>
-        </ul>
-
-    </nav>
+    <!--Fin Parte 1 de la pagina-->
 </body>
-<script src="bootstrap/js/"></script>
+
+<!--JavaScript Bootstrap-->
+<script src="bootstrap/js/bootstrap.min.js"></script>
 
 </html>
