@@ -6,7 +6,12 @@
   font-family: 'Skranji', cursive;
   box-sizing: border-box;
 }
-
+body{
+  background-color: rgb(44, 18, 101);
+}
+h1,p{
+  color: white;
+}
 header {
   width: 100%;
   height: 80px;
