@@ -6,12 +6,16 @@
   font-family: 'Skranji', cursive;
   box-sizing: border-box;
 }
-body{
+
+body {
   background-color: rgb(44, 18, 101);
 }
-h1,p{
+
+h1,
+p {
   color: white;
 }
+
 header {
   width: 100%;
   height: 80px;
@@ -26,7 +30,7 @@ header {
   font-size: 28px;
   font-weight: bold;
   color: #ffffff;
-} 
+}
 
 .bars {
   display: none;
@@ -52,6 +56,293 @@ header {
   background-color: #ffe00e;
 }
 
+/* HOME */
+.home {
+  /* border: 1px solid black; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0px 100px 0px;
+  box-sizing: content-box;
+}
+
+.boton-khaby-first {
+  border: 3px solid orange;
+  width: 80%;
+  border-radius: 30px;
+  text-align: center;
+  margin: 40px 10px 70px 10px;
+  padding: 20px;
+  box-sizing: content-box;
+}
+
+.title-boton-khaby-first {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.title-token-number {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: orange;
+}
+
+.container-token-title-number {
+  border: yellow dashed 2px;
+  border-radius: 20px;
+  margin: 10px 0px;
+  padding: 15px 10px;
+  box-sizing: content-box;
+}
+
+.number-token {
+  font-size: 13px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ABOUT */
+.about {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-about{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color:orange;
+  margin: 0;
+  padding: 5px;
+}
+.container-about-img-text{
+  /* border: 1px solid yellow; */
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.container-about-img-text img{
+  width: 80%;
+  margin: 5px 0px;
+}
+.text-about{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* TOKENOMIC */
+.tokenomika{
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: content-box;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.img-khaby-fornite{
+  width: 80%;
+  margin: 10px 0px;
+}
+.img-circle{
+  width: 70%;
+  margin: 30px 0px;
+}
+/* .container-title-text-grafic{
+  border: 1px solid green;
+} */
+.title-tokenomic{
+  text-align: center;
+  font-weight: 700;
+  color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text-tokenomic{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.img-grafic{
+  width: 80%;
+  margin: 10px 0px;
+}
+/* ROUMAP */
+.roumap{
+  /* border: 1px solid salmon; */
+  box-sizing: content-box;
+  margin-bottom: 30px;
+}
+.title-roumap{
+  color: orange;
+  text-align: center;
+}
+.container-three-fase{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px dashed red; */
+  padding: 5px;
+  box-sizing: content-box;
+}
+.box-fase-one-two-three{
+  width: 90%;
+  border: 5px solid whitesmoke;
+  height: 450px;
+  border-radius: 25px;
+  margin: 20px 0;
+}
+.first-back{
+  background-color: rgb(88, 248, 163);
+}
+.second-back{
+  background-color: rgb(255, 217, 1);
+}
+.three-back{
+  background-color: rgb(168, 43, 226);
+}
+.box-img-title-fase{
+  /* border: 1px solid yellow; */
+  border-bottom: dashed 2px white;
+  padding: 0 10px;
+}
+.box-img-khaby-fase{
+ /*  border: 1px violet dashed; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: content-box;
+}
+.box-img-khaby-fase img {
+  width: 20%;
+}
+.container-text-description{
+  /* border: 1px solid blue; */
+  padding: 10px;
+  margin-bottom: 70px;
+}
+.title-fase{
+  font-size: 30px;
+}
+.second-title{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.container-text-description p {
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+/* SHOP-TOKEN */
+.shop-token{
+  /* border: 1px solid red; */
+  margin-bottom: 40px;
+}
+.title-shop{
+  color: orange;
+  text-align: center;
+}
+.container-shop-box{
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-shop-one-two-three{
+  width: 80%;
+  height: 430px;
+  border: 5px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border-bottom-left-radius: 160px;
+  border-bottom-right-radius: 160px;
+  box-sizing: content-box;
+}
+.box-shop-one-two-three img {
+  width: 30%;
+}
+.box-shop-one-two-three h1{
+  text-align: center;
+  margin: 10px;
+}
+.box-shop-one-two-three p{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.back-first{
+  background-image: linear-gradient(to right, rgb(54, 149, 245),rgb(15, 76, 137) ) ;
+}
+.back-second{
+  background-image: linear-gradient(to right, #e3dc12, #97920e) ;
+}
+.back-three{
+  background-image: linear-gradient(to right, rgb(39, 246, 177),rgb(11, 130, 91));
+}
+
+/* KING-KHABY*/
+.king-khaby{
+  /* border: 1px solid red; */
+  margin-bottom: 30px;
+}
+.title-king{
+  color: orange;
+  text-align: center;
+}
+.container-king-divs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-king-divs img{
+  width: 60%;
+  margin: 20px 0;
+}
+.container-three-color{
+  /* border: 1px dashed salmon; */
+  width: 60%;
+}
+.color-div{
+  border: 3px solid white;
+  border-radius: 40px;
+  height: 80px;
+  margin: 20px 0px;
+}
+
+/* CONTACT */
+.contact{
+  /* border: 1px solid green; */
+  padding: 10px;
+}
+.box-title-number-email{
+  margin: 20px 0;
+}
+.first-title{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.number-text{
+  color: rgb(168, 43, 226);
+  margin: 0;
+}
+.box-icon{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 1px solid white;
+}
+.box-icon i {
+  color: #5a5a5a;
+  font-size: 20px;
+}
 
 @media(max-width:900px) {
   header {
@@ -94,9 +385,11 @@ header {
     transition: 0.5s;
     opacity: 0;
   }
+
   .nav_bar.active ul {
     opacity: 1;
   }
+
   .nav_bar ul li a {
     margin-bottom: 20px;
   }
