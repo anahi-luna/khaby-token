@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(44, 18, 101);
+  background-color: #1e023a;
 }
 
 h1,
@@ -26,6 +26,9 @@ header {
   padding: 0 100px;
 }
 
+.uno_logo {
+  width: 160px;
+}
 .logo {
   font-size: 28px;
   font-weight: bold;
