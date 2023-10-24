@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(44, 18, 101);
+  background-color: rgb(38, 27, 60);
 }
 
 h1,
@@ -92,15 +92,19 @@ header {
 }
 
 .container-token-title-number {
+  width: 100%;
   border: yellow dashed 2px;
-  border-radius: 20px;
+  border-radius: 25px;
   margin: 10px 0px;
-  padding: 15px 10px;
-  box-sizing: content-box;
+  padding: 10px 3px;
+  box-sizing: border-box;
 }
 
 .number-token {
-  font-size: 13px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  font-size: 10px;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -146,9 +150,53 @@ header {
   width: 80%;
   margin: 10px 0px;
 }
+.container-circle-text{
+  border: 1px solid yellow;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
 .img-circle{
   width: 70%;
-  margin: 30px 0px;
+}
+.title-top{
+  font-size: 9px;
+  position: absolute;
+  top: 2%;
+  left:20%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title-top span{
+  position:absolute;
+  top:10px;
+  left: 40px;
+  padding: 5px;
+}
+.title-left{
+  font-size: 9px;
+  bottom: 40%;
+  left: 1%;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title-left span{
+  position: absolute;
+  bottom: -15px;
+  left: 20px;
+}
+.title-right{
+  position: absolute;
+  font-size: 9px;
+  right: 2%;
+  bottom: 15%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title-right span{
+  position: absolute;
+  bottom: -15px;
+  right: 30px;
 }
 /* .container-title-text-grafic{
   border: 1px solid green;
@@ -162,9 +210,39 @@ header {
 .text-tokenomic{
   font-family: Arial, Helvetica, sans-serif;
 }
+.container-grafic-text{
+  border: 1px solid salmon;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
 .img-grafic{
-  width: 80%;
+  width: 75%;
   margin: 10px 0px;
+}
+.title-grafic-first{
+  position: absolute;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: 'italic';
+  top: 15%;
+  left: 0%;
+}
+.title-grafic-second{
+  position: absolute;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: 'italic';
+  top: 45%;
+  left: 0%;
+}
+.title-grafic-three{
+  position: absolute;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: 'italic';
+  bottom: 15%;
+  left: 0%;
 }
 /* ROUMAP */
 .roumap{
@@ -252,7 +330,7 @@ header {
 .box-shop-one-two-three{
   width: 80%;
   height: 430px;
-  border: 5px solid white;
+  border: 5px solid rgb(189, 189, 189);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,6 +349,7 @@ header {
 }
 .box-shop-one-two-three p{
   text-align: center;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   margin-top: 5px;
@@ -300,17 +379,17 @@ header {
   align-items: center;
 }
 .container-king-divs img{
-  width: 60%;
+  width: 95%;
   margin: 20px 0;
 }
 .container-three-color{
   /* border: 1px dashed salmon; */
-  width: 60%;
+  width: 90%;
 }
 .color-div{
-  border: 3px solid white;
-  border-radius: 40px;
-  height: 80px;
+  border: 5px solid rgb(189, 189, 189);
+  border-radius: 50px;
+  height: 100px;
   margin: 20px 0px;
 }
 
@@ -343,7 +422,18 @@ header {
   color: #5a5a5a;
   font-size: 20px;
 }
-
+/* Footer */
+footer{
+  width: 100%;
+  padding: 40px 10px;
+  background-color: rgb(13, 4, 36);
+}
+.title-footer{
+  color: white;
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 @media(max-width:900px) {
   header {
     padding: 0px 30px;
