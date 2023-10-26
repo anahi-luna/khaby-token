@@ -120,7 +120,7 @@ header {
   flex-direction: column;
   align-items: center;
   margin: 10px 0px 100px 0px;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .boton-khaby-first {
@@ -148,9 +148,8 @@ header {
 }
 
 .container-token-title-number {
-  width: 100%;
-  border: orange dashed 2px;
-  border-radius: 25px;
+  border: yellow dashed 2px;
+  border-radius: 20px;
   margin: 10px 0px;
   padding: 10px 3px;
   box-sizing: border-box;
@@ -326,38 +325,9 @@ footer {
   padding: 30px 20px;
   margin-bottom: 20px;
 }
-
-.img-circle {
+.img-circle{
   width: 70%;
-}
-
-.title-top {
-  font-size: 9px;
-  position: absolute;
-  top: 2%;
-  left: 20%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.title-top span {
-  position: absolute;
-  top: 10px;
-  left: 40px;
-  padding: 5px;
-}
-
-.title-left {
-  font-size: 9px;
-  bottom: 40%;
-  left: 1%;
-  position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.title-left span {
-  position: absolute;
-  bottom: -15px;
-  left: 20px;
+  margin: 30px 0px;
 }
 
 .title-right {
@@ -388,45 +358,10 @@ footer {
 .text-tokenomic {
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.container-grafic-text {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.img-grafic {
-  width: 75%;
+.img-grafic{
+  width: 80%;
   margin: 10px 0px;
 }
-
-.title-grafic-first {
-  position: absolute;
-  font-size: 10px;
-  font-weight: 600;
-  font-family: "italic";
-  top: 15%;
-  left: -3%;
-}
-
-.title-grafic-second {
-  position: absolute;
-  font-size: 10px;
-  font-weight: 600;
-  font-family: "italic";
-  top: 45%;
-  left: -3%;
-}
-
-.title-grafic-three {
-  position: absolute;
-  font-size: 10px;
-  font-weight: 600;
-  font-family: "italic";
-  bottom: 15%;
-  left: -3%;
-}
-
 /* ROUMAP */
 .roumap {
   box-sizing: content-box;
@@ -441,7 +376,8 @@ footer {
 
 .container-three-fase {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   padding: 5px;
   box-sizing: content-box;
@@ -449,6 +385,7 @@ footer {
 
 .box-fase-one-two-three {
   width: 90%;
+  max-width: 280px;
   border: 5px solid whitesmoke;
   height: 450px;
   border-radius: 25px;
@@ -523,14 +460,15 @@ footer {
 .container-shop-box {
   /* border: 1px solid blue; */
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 
 .box-shop-one-two-three {
   width: 80%;
   height: 430px;
-  border: 5px solid rgb(189, 189, 189);
+  border: 5px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -538,21 +476,19 @@ footer {
   margin: 10px 0;
   border-bottom-left-radius: 160px;
   border-bottom-right-radius: 160px;
-  box-sizing: content-box;
+  box-sizing:border-box;
 }
 
 .box-shop-one-two-three img {
-  width: 30%;
+  width: 20%;
 }
-
-.box-shop-one-two-three h1 {
+.box-shop-one-two-three h1{
   text-align: center;
-  margin: 10px;
+  margin: 10px 10px 25px 10px;
 }
 
 .box-shop-one-two-three p {
   text-align: center;
-  font-size: 13.5px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   margin-top: 5px;
@@ -570,17 +506,112 @@ footer {
   background-image: linear-gradient(to right, rgb(39, 246, 177), rgb(11, 130, 91));
 }
 
-/*Vista MobilMedio 414px*/
-@media (min-width: 414px) and (max-width: 768px) {
-  .box-shop-one-two-three {
-    margin: 50px;
-  }
-  .box-shop-one-two-three h1 {
-    margin-top: 50px;
-  }
-  .box-shop-one-two-three p {
-    margin-top: 20px;
-  }
+/* KING-KHABY*/
+.king-khaby{
+  /* border: 1px solid red; */
+  margin-bottom: 30px;
+}
+.title-king{
+  color: orange;
+  text-align: center;
+}
+.container-king-divs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-king-divs img{
+  width: 60%;
+  margin: 20px 0;
+}
+.container-three-color{
+  /* border: 1px dashed salmon; */
+  width: 60%;
+}
+.color-div{
+  border: 3px solid white;
+  border-radius: 40px;
+  height: 80px;
+  margin: 20px 0px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/* CONTACT */
+.contact{
+  /* border: 1px solid green; */
+  padding: 10px;
+}
+.box-title-number-email{
+  margin: 20px 0;
+}
+.first-title{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.number-text{
+  color: rgb(168, 43, 226);
+  margin: 0;
+}
+.box-icon{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 1px solid white;
+}
+.box-icon i {
+  color: #5a5a5a;
+  font-size: 20px;
+}
+
+@media(max-width:900px) {
+  header {
+    padding: 0px 30px;
+  }
+
+  .bars {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bars .line {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0px;
+  }
+
+  .nav_bar {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #2e2f34;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .nav_bar.active {
+    height: 450px;
+  }
+
+  .nav_bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .nav_bar.active ul {
+    opacity: 1;
+  }
+
+  .nav_bar ul li a {
+    margin-bottom: 20px;
+  }
+}
