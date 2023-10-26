@@ -1,0 +1,65 @@
+/* SHOP-TOKEN */
+.shop-token{
+    /* border: 1px solid red; */
+    margin-bottom: 40px;
+  }
+  .title-shop{
+    color: orange;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .container-shop-box{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-shop-one-two-three{
+    width: 80%;
+    height: 430px;
+    border: 5px solid rgb(189, 189, 189);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    box-sizing: content-box;
+  }
+  .box-shop-one-two-three img {
+    width: 30%;
+  }
+  .box-shop-one-two-three h1{
+    text-align: center;
+    margin: 10px;
+  }
+  .box-shop-one-two-three p{
+    text-align: center;
+    font-size: 13.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+  .back-first{
+    background-image: linear-gradient(to right, rgb(54, 149, 245),rgb(15, 76, 137) ) ;
+  }
+  .back-second{
+    background-image: linear-gradient(to right, #e3dc12, #97920e) ;
+  }
+  .back-three{
+    background-image: linear-gradient(to right, rgb(39, 246, 177),rgb(11, 130, 91));
+  }
+
+  /*Vista MobilMedio 414px*/
+  @media (min-width: $mobilChico) and (max-width: $tablet) {
+    .box-shop-one-two-three {
+      margin: 50px;
+    }
+    .box-shop-one-two-three h1 {
+      margin-top: 50px;
+    }
+    .box-shop-one-two-three p {
+    margin-top: 20px;
+    }
+  } 

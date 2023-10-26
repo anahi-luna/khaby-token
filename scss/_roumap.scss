@@ -1,0 +1,67 @@
+/* ROUMAP */
+.roumap{
+    box-sizing: content-box;
+    margin-bottom: 30px;
+  }
+  .title-roumap{
+    color: orange;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .container-three-fase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    box-sizing: content-box;
+  }
+  .box-fase-one-two-three{
+    width: 90%;
+    border: 5px solid whitesmoke;
+    height: 450px;
+    border-radius: 25px;
+    margin: 20px 0;
+  }
+  .first-back{
+    background-image: linear-gradient(to right, rgb(39, 246, 177),rgb(11, 130, 91));
+  }
+  .second-back{
+    background-image: linear-gradient(to right, #e3dc12, #97920e) ;
+  }
+  .three-back{
+    background-image: linear-gradient(to right, rgb(54, 149, 245),rgb(15, 76, 137) ) ;
+  }
+  .box-img-title-fase{
+    /* border: 1px solid yellow; */
+    border-bottom: dashed 2px white;
+    padding: 0 10px;
+  }
+  .box-img-khaby-fase{
+   /*  border: 1px violet dashed; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: content-box;
+  }
+  .box-img-khaby-fase img {
+    width: 20%;
+  }
+  .container-text-description{
+    /* border: 1px solid blue; */
+    padding: 10px;
+    margin-bottom: 70px;
+  }
+  .title-fase{
+    font-size: 40px;
+  }
+  .second-title{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+  .container-text-description p {
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }

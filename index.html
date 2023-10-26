@@ -18,6 +18,9 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Brygada+1918:ital,wght@1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Roboto:wght@100;400;500&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -28,7 +31,7 @@
     <!--CSS Propio-->
     <link rel="stylesheet" href="css/styles.css">
     <!--Titulo de la pestaña del Navegador-->
-    <title>Khaby MemeCoin 3.0</title>
+    <title> Khaby MemeCoin 3.0 | Inicio </title>
 </head>
 
 <body>
@@ -36,7 +39,7 @@
     <!--NavBar Inicio-->
     <header>
         <div class="logo">
-            <a href=""><img src="img/logo completo.png" alt="logo khaby" class="uno_logo"></a>
+            <a href="#home"><img src="img/logo-completo.png" alt="logo khaby" class="uno_logo"></a>
         </div>
         <div class="bars">
             <div class="line"></div>
@@ -47,16 +50,16 @@
         <nav class="nav_bar">
             <ul>
                 <li>
-                    <a href="#" class="active">Start</a>
+                    <a href="index.html" class="active">Start</a>
                 </li>
                 <li>
-                    <a href="#tokenomic">TOKENOMIC</a>
+                    <a href="pages/tokenomic.html">TOKENOMIC</a>
                 </li>
                 <li>
-                    <a href="#roumap">ROUMAP</a>
+                    <a href="pages/roumap.html">ROUMAP</a>
                 </li>
                 <li>
-                    <a href="#buykhaby">BUY KHABY</a>
+                    <a href="pages/buykhaby.html">BUY KHABY</a>
                 </li>
 
             </ul>
@@ -67,10 +70,9 @@
 
     <!--NavBar Fin-->
 
-    <main>
-
-        <!--Inicio del codigo Parte 1 de la pagina-->
-        <div class="home">
+<!--Inicio del codigo Parte 1 de la pagina-->
+    <section>
+        <div class="home" id="home">
             <div class="boton-khaby-first">
                 <h1 class="title-boton-khaby-first">COMPRAR KHABY</h1>
             </div>
@@ -82,38 +84,53 @@
         <div class="about">
             <h1 class="title-about">QUIENES SOMOS</h1>
             <div class="container-about-img-text">
-                <img src="/img/cohete.png" alt="">
+                <img src="https://limachi92-org.my.canva.site/new-products-and-services-business-website-in-violet-dark-blue-neon-pink-gradient-tech-style-website/images/d72fb5b5937ae1d1f2074e4b4f5da3d0.jpg"
+                    alt="">
                 <p class="text-about">somos un equipo entusiastas de criptomonedas
                     hemos elegido al Rey de la red social tik tok y embajador de binance
                     KHABY LAME token khaby es una meme coin creada en la red de binance smartchain con un alto potencial
                     en adopcion y escalabilidad</p>
             </div>
         </div>
-        <!--Fin del codigo Parte 1 de la pagina-->
-
-        <!--Inicio de Codigo de "TOKENOMIC"-->
-        <div class="tokenomika" id="tokenomic">
-            <img src="/img/khaby-fornite.png" class="img-khaby-fornite" alt="">
-            <img src="/img/grafica-sola.png" class="img-circle" alt="">
+    </section>
+<!--Fin del codigo Parte 1 de la pagina-->
+       
+<!--Inicio de Codigo de "TOKENOMIC"-->
+    <section>
+        <div class="tokenomika">
+            <h1 class="title-tokenomic">TOKENOMIC</h1>
+            <img src="img/khaby-fornite.png" class="img-khaby-fornite" alt="">
+            <div class="container-circle-text">
+                <p class="title-top">Listado CEX-EQUIPO <span>10%</span></p>
+                <p class="title-left">Khaby lame <span>30%</span></p>
+                <p class="title-right">Fondo de liquidez <span>60%</span></p>
+                <img src="img/grafica-sola.png" class="img-circle" alt="">
+            </div>
             <div class="container-title-text-grafic">
-                <h1 class="title-tokenomic">TOKENOMIC</h1>
                 <p class="text-tokenomic">El lanzamiento del token $kby ayudará a sostener el crecimiento de la
                     comunidad de de khaby Memes y
                     recompensará a los miembros leales.</p>
-                <img src="/img/horizontal-grafica.png" class="img-grafic" alt="">
+                <div class="container-grafic-text">
+                    <p class="title-grafic-first">Fondo de liquidez</p>
+                    <p class="title-grafic-second">Khaby lame</p>
+                    <p class="title-grafic-three">Listadocex-dev</p>
+                    <img src="img/horizontal-grafic.png" class="img-grafic" alt="">
+                </div>
             </div>
         </div>
-        <!--Fin de Codigo de "TOKENOMIC"-->
+    </section>
+<!--Fin de Codigo de "TOKENOMIC"-->
 
-        <!--Inicio de Codigo de "ROUMAP"-->
-        <div class="roumap" id="roumap">
+<!--Inicio de Codigo de "ROUMAP"-->
+    <section>
+        <div class="roumap">
             <h1 class="title-roumap">ROUMAP</h1>
             <div class="container-three-fase">
                 <div class="box-fase-one-two-three first-back">
                     <div class="box-img-title-fase">
                         <div class="box-img-khaby-fase">
                             <h1 class="title-fase">Fase 1</h1>
-                            <img src="/img/khaby-logo-litle.png" alt="">
+                            <img src="img/khaby-logo-litle.png" alt="">
                         </div>
                         <p class="second-title">Desarrollo</p>
                     </div>
@@ -129,7 +146,7 @@
                     <div class="box-img-title-fase">
                         <div class="box-img-khaby-fase">
                             <h1 class="title-fase">Fase 2</h1>
-                            <img src="/img/khaby-logo-litle.png" alt="">
+                            <img src="img/khaby-logo-litle.png" alt="">
                         </div>
                         <p class="second-title">Lanzamiento</p>
                     </div>
@@ -146,7 +163,7 @@
                     <div class="box-img-title-fase">
                         <div class="box-img-khaby-fase">
                             <h1 class="title-fase">Fase 3</h1>
-                            <img src="/img/khaby-logo-litle.png" alt="">
+                            <img src="img/khaby-logo-litle.png" alt="">
                         </div>
                         <p class="second-title">Listado cex</p>
                     </div>
@@ -156,43 +173,52 @@
                 </div>
             </div>
         </div>
-        <!--Fin de Codigo de "ROUMAP"-->
+    </section>
+<!--Fin de Codigo de "ROUMAP"-->
+        
 
-        <!--Inicio de Codigo de "Como Comprar"-->
-        <div class="shop-token" id="buykhaby">
-            <h1 class="title-shop">COMO COMPRAR</h1>
-            <div class="container-shop-box">
-                <div class="box-shop-one-two-three back-first">
-                    <img src="/img/logo-lobo.png" alt="">
-                    <h1>Crea una billetera</h1>
-                    <p>Descargue metamask o la billetera de su elección desde la tienda de aplicaciones o Google Play
-                        Store de forma gratuita. Usuarios de escritorio, descarguen la extensión de Google Chrome en
-                        metamask.io.</p>
-                </div>
-                <div class="box-shop-one-two-three back-second">
-                    <img src="/img/logo-lobo.png" alt="">
-                    <h1>Consigue algo de BNB</h1>
-                    <p>tenga BNB en su billetera para cambiar a $KHABY. Si no tiene BNB, puede comprar directamente en
-                        metamask, transferirlo desde otra billetera o comprar en otro intercambio y enviarlo a su
-                        billetera.</p>
-                </div>
-                <div class="box-shop-one-two-three back-three">
-                    <img src="/img/logo-lobo.png" alt="">
-                    <h1>Ir a pancakeswap</h1>
-                    <p>conéctate a pancakeswap. Vaya a la pancakeswap.finance en Google Chrome o en el navegador dentro
-                        de su aplicación Metamask. Conecte su billetera. Pegue la dirección del token $KHABY en
-                        pancakeswap, seleccione khaby y confirme. Cuando Metamask le solicite una firma de billetera,
-                        firme.</p>
-                </div>
+<!--Inicio de Codigo de "Como Comprar"-->
+<section>
+
+    <div class="shop-token">
+        <h1 class="title-shop">COMO COMPRAR</h1>
+        <div class="container-shop-box">
+            <div class="box-shop-one-two-three back-first">
+                <img src="../img/metamask-seeklogo.com.svg" alt="" width="150px" height="150px">
+                <h1>Crea una billetera</h1>
+                <p>Descargue metamask o la billetera de su elección desde la tienda de aplicaciones o Google Play
+                    Store de forma gratuita. Usuarios de escritorio, descarguen la extensión de Google Chrome en
+                    metamask.io.</p>
+            </div>
+            <div class="box-shop-one-two-three back-second">
+                <img src="../img/bnb-bnb-logo.svg" alt="" width="150px" height="150px">
+                <h1>Consigue algo de BNB</h1>
+                <p>tenga BNB en su billetera para cambiar a $KHABY. Si no tiene BNB, puede comprar directamente en
+                    metamask, transferirlo desde otra billetera o comprar en otro intercambio y enviarlo a su
+                    billetera.</p>
+            </div>
+            <div class="box-shop-one-two-three back-three">
+                <img src="../img/pancakeswap-cake-logo.svg" alt="" width="150px" height="150px">
+                <h1>Ir a pancakeswap</h1>
+                <p>conéctate a pancakeswap. Vaya a la pancakeswap.finance en Google Chrome o en el navegador dentro
+                    de su aplicación Metamask. Conecte su billetera. Pegue la dirección del token $KHABY en
+                    pancakeswap, seleccione khaby y confirme. Cuando Metamask le solicite una firma de billetera,
+                    firme.</p>
             </div>
         </div>
-        <!--Fin de Codigo de "Como Comprar"-->
+    </div>
+    
+</section>
+<!--Fin de Codigo de "Como Comprar"-->  
 
-        <!--Inicio de Codigo de "Reinado de Khaby"-->
+<!--Inicio de Codigo de "Reinado de Khaby"-->
+    <section>
         <div class="king-khaby">
             <h1 class="title-king">EL REINADO DE KHABY</h1>
             <div class="container-king-divs">
-                <img src="/img/khaby-fornite.png" alt="">
+                <!-- <img src="/img/khaby-fornite.png" alt=""> -->
+                <img src="https://limachi92-org.my.canva.site/new-products-and-services-business-website-in-violet-dark-blue-neon-pink-gradient-tech-style-website/images/eca248849e7ff23287cf166c80e0ae72.png"
+                    alt="">
                 <div class="container-three-color">
                     <div class="color-div second-back"></div>
                     <div class="color-div first-back"></div>
@@ -200,24 +226,37 @@
                 </div>
             </div>
         </div>
-        <!--fin de Codigo de "Reinado de Khaby"-->
-
-        <!--Inicio de Codigo de "Redes Sociales"-->
+    </section>
+<!--fin de Codigo de "Reinado de Khaby"-->
+        
+<!--Inicio de Codigo de "Redes Sociales"-->
+    <section>
         <div class="contact">
             <h1>REDES SOCIALES</h1>
             <div>
                 <div class="box-title-number-email">
                     <div class="box-icon">
-                        <i class="fa-brands fa-x-twitter"></i>
-                        <i class="fa-regular fa-paper-plane"></i>
-
+                        <a href="https://twitter.com/tucuentadetwitter" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i> <!-- Icono de Twitter -->
+                        </a>
+                        <a href="https://web.telegram.org/k/" target="_blank">
+                            <i class="fa-regular fa-paper-plane"></i> <!-- Icono de Telegram-->
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--Fin de Codigo de "Redes Sociales"-->
+        </div>    
+    </section>
+<!--Fin de Codigo de "Redes Sociales"-->
 
-    </main>
+<!--Pie de pagina Inicio-->
+<footer>
+    <h4 class="">Terminos y Condiciones</h4>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia numquam voluptate assumenda alias modi voluptas necessitatibus distinctio perspiciatis ab itaque, obcaecati ratione beatae amet dignissimos ipsam velit quasi. Nobis, iste.
+    </p>
+</footer>
+<!--Pie de pagina Fin-->
 
 </body>
 
