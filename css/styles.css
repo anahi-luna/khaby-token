@@ -20,6 +20,7 @@ header {
   position: fixed;
   width: 100%;
   height: 80px;
+  z-index: 10;
   background-color: rgb(44, 44, 44);
   display: flex;
   align-items: center;
@@ -86,15 +87,13 @@ header {
 
 .title-boton-khaby-first {
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
 }
 
 .title-token-number {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   color: orange;
 }
 
@@ -114,35 +113,34 @@ header {
   width: 100%;
   font-size: 10px;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ABOUT */
 .about {
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .title-about{
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   color:orange;
   margin: 0;
   padding: 5px;
 }
 .container-about-img-text{
-  /* border: 1px solid yellow; */
   width: 100%;
   text-align: center;
   padding: 10px;
 }
 .container-about-img-text img{
   width: 80%;
-  margin: 5px 0px;
+  max-width: 250px;
+  margin: 20px 0px;
 }
 .text-about{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'italic';
+  font-weight: 500;
+  margin: auto;
 }
 /* TOKENOMIC */
 .tokenomika{
@@ -150,21 +148,28 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: content-box;
+  box-sizing: border-box;
   margin-bottom: 30px;
   padding: 10px;
 }
 .img-khaby-fornite{
   width: 80%;
+  max-width: 260px;
   margin: 10px 0px;
 }
 .container-circle-text{
-  border: 1px solid yellow;
   position: relative;
   display: flex;
   justify-content: center;
   padding: 30px 20px;
   margin-bottom: 20px;
+  max-width: 440px;
+  box-sizing: border-box;
+}
+.container-title-text-grafic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .img-circle{
   width: 70%;
@@ -211,18 +216,21 @@ header {
 } */
 .title-tokenomic{
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   color: orange;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .text-tokenomic{
+  width: 80%;
+  max-width: 460px;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 .container-grafic-text{
-  border: 1px solid salmon;
   position: relative;
   display: flex;
   justify-content: flex-end;
+  max-width: 440px;
+  box-sizing: border-box;
 }
 .img-grafic{
   width: 75%;
@@ -276,7 +284,7 @@ header {
   border: 5px solid whitesmoke;
   height: 450px;
   border-radius: 25px;
-  margin: 20px 0;
+  margin: 20px 5px;
 }
 .first-back{
   background-color: rgb(88, 248, 163);
@@ -346,7 +354,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 5px;
   border-bottom-left-radius: 160px;
   border-bottom-right-radius: 160px;
   box-sizing:border-box;
@@ -447,24 +455,105 @@ footer{
   font-family: Arial, Helvetica, sans-serif;
 }
 @media(min-width:560px){
+  /* HOME */
+  .home{
+    height: 400px;
+    margin: 70px 0px 100px 0px;
+  }
   .container-token-title-number{
     padding: 15px 3px;
   }
   .number-token{
     font-size: 15px;
   }
+  /* ABOUT */
+  .text-about{
+    font-size: 18px;
+    width: 80%;
+  }
 }
 @media(min-width:900px){
   /*Home*/
   .home{
     justify-content: center;
-    height: 500px;
+    height: 700px;
+  }
+  .title-token-number{
+    font-size: 50px;
+    margin: 30px 0px;
   }
   .boton-khaby-first{
     display: none;
   }
   .container-token-title-number{
-    width: 50%;
+    width: 90%;
+    max-width: 700px;
+  }
+  .number-token{
+    font-size: 21px;
+  }
+  /* ABOUT */
+  .title-about{
+    font-size: 50px;
+  }
+  .text-about{
+    font-size: 28px;
+    margin-top: 30px;
+  }
+
+  /* TOKENOMIC */
+  .tokenomika{
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 10px;
+    max-width: 1200px;
+    margin: 50px auto;
+    box-sizing: border-box;
+  }
+  .img-khaby-fornite{
+    position: absolute;
+    top: 3%;
+    left: 10%;
+  }
+  .img-circle{
+    margin: 5px;
+  }
+  .container-circle-text{
+    align-self: flex-end;
+    padding: 30px 20px 0px 20px;
+    max-width: 400px;
+  }
+  .title-top, .title-left, .title-right{
+    font-size: 12px;
+  }
+  .title-right{
+    right: -5%;
+  }
+  .title-tokenomic{
+    font-size: 50px;
+  }
+  .text-tokenomic{
+    margin: 30px 0px;
+    width: 80%;
+    font-size: 20px;
+    max-width: 460px;
+    text-align: center;
+  }
+  .container-grafic-text{
+    max-width: 400px;
+  }
+  .title-grafic-first, .title-grafic-second, .title-grafic-three{
+    font-size: 14px;
+  }
+  .img-grafic{
+    width: 70%;
+  }
+}
+@media(min-width:1200px){
+  /* TOKENOMIKA */
+  .img-khaby-fornite{
+    left: 15%;
   }
 }
 @media(max-width:900px) {
