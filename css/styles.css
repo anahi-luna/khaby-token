@@ -211,9 +211,7 @@ header {
   bottom: -15px;
   right: 30px;
 }
-/* .container-title-text-grafic{
-  border: 1px solid green;
-} */
+
 .title-tokenomic{
   text-align: center;
   font-weight: 500;
@@ -296,12 +294,10 @@ header {
   background-color: rgb(168, 43, 226);
 }
 .box-img-title-fase{
-  /* border: 1px solid yellow; */
   border-bottom: dashed 2px white;
   padding: 0 10px;
 }
 .box-img-khaby-fase{
- /*  border: 1px violet dashed; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -312,7 +308,6 @@ header {
   width: 20%;
 }
 .container-text-description{
-  /* border: 1px solid blue; */
   padding: 10px;
   margin-bottom: 70px;
 }
@@ -331,8 +326,8 @@ header {
 }
 /* SHOP-TOKEN */
 .shop-token{
-  /* border: 1px solid red; */
   margin-bottom: 40px;
+  margin-top: 60px;
 }
 .title-shop{
   color: orange;
@@ -386,12 +381,12 @@ header {
 
 /* KING-KHABY*/
 .king-khaby{
-  /* border: 1px solid red; */
   margin-bottom: 30px;
 }
 .title-king{
   color: orange;
   text-align: center;
+  margin: 0;
 }
 .container-king-divs{
   display: flex;
@@ -400,29 +395,40 @@ header {
 }
 .container-king-divs img{
   width: 95%;
-  margin: 20px 0;
+  max-width: 370px;
 }
 .container-three-color{
-  /* border: 1px dashed salmon; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 90%;
 }
 .color-div{
+  max-width: 350px;
   border: 5px solid rgb(189, 189, 189);
-  border-radius: 50px;
-  height: 100px;
+  border-radius: 60px;
   margin: 20px 0px;
+}
+.color-div p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 10px;
 }
 
 /* CONTACT */
 .contact{
-  /* border: 1px solid green; */
   padding: 10px;
 }
 .box-title-number-email{
   margin: 20px 0;
+  display: flex;
+  justify-content: center;
 }
-.first-title{
-  font-family: Arial, Helvetica, sans-serif;
+.first-title-contact-box{
+  color: orange;
+  text-align: center;
   margin: 0;
 }
 .number-text{
@@ -430,7 +436,7 @@ header {
   margin: 0;
 }
 .box-icon{
-  width: 50%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -451,8 +457,7 @@ footer{
 .title-footer{
   color: white;
   margin: 0;
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 @media(min-width:560px){
   /* HOME */
@@ -470,6 +475,30 @@ footer{
   .text-about{
     font-size: 18px;
     width: 80%;
+  }
+  /* CONTACT */
+  .box-icon{
+    max-width: 460px;
+  }
+  .box-icon i {
+    font-size: 25px;
+  }
+}
+@media(min-width:750px){
+  /* King khaby */
+  .container-king-divs{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container-king-divs img{
+    max-width: 400px;
+  }
+  .container-three-color{
+    width: 40%;
+  }
+  /* CONTACT */
+  .box-icon i {
+    font-size: 30px;
   }
 }
 @media(min-width:900px){
@@ -494,10 +523,10 @@ footer{
   }
   /* ABOUT */
   .title-about{
-    font-size: 50px;
+    font-size: 40px;
   }
   .text-about{
-    font-size: 28px;
+    font-size: 25px;
     margin-top: 30px;
   }
 
@@ -548,6 +577,10 @@ footer{
   }
   .img-grafic{
     width: 70%;
+  }
+  /*Contact*/
+  .first-title-contact-box{
+    font-size: 40px;
   }
 }
 @media(min-width:1200px){
