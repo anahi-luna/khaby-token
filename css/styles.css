@@ -15,20 +15,22 @@ h1,
 p {
   color: white;
 }
-
-header {
+/* Nav-bar */
+.navBar-general{
   position: fixed;
   width: 100%;
   height: 80px;
   z-index: 10;
-  background-color: rgb(44, 44, 44);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0px 30px;
   top: 0;
+  box-sizing: border-box;
 }
-
+.navbar-desktop{
+  display: none;
+}
 .uno_logo {
   width: 160px;
 }
@@ -36,10 +38,6 @@ header {
   font-size: 28px;
   font-weight: bold;
   color: #ffffff;
-}
-
-.bars {
-  display: none;
 }
 
 .nav_bar ul li a {
@@ -50,6 +48,7 @@ header {
   border-radius: 15px;
   transition: 0.2s;
   margin: 0 5px;
+  margin-bottom: 20px;
 }
 
 .nav_bar ul li a:hover {
@@ -60,6 +59,47 @@ header {
 .nav_bar ul li a.active {
   color: #212127;
   background-color: #ffe00e;
+}
+
+.bars {
+  display: block;
+  cursor: pointer;
+}
+
+.bars .line {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 6px 0px;
+}
+
+.nav_bar {
+  height: 0px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  background-color: #2e2f34;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.nav_bar.active {
+  height: 450px;
+}
+
+.nav_bar ul {
+  display: block;
+  width: fit-content;
+  margin: 80px auto 0 auto;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.nav_bar.active ul {
+  opacity: 1;
 }
 
 /* HOME */
@@ -81,8 +121,7 @@ header {
   text-align: center;
   margin: 100px 10px 70px 10px;
   padding: 20px;
-  box-sizing: content-box;
-  
+  box-sizing: border-box;
 }
 
 .title-boton-khaby-first {
@@ -502,6 +541,54 @@ footer{
   }
 }
 @media(min-width:900px){
+  /* Navbar */
+  .nav_bar, .bars{
+    display: none;
+  }
+  .navBar-general{
+    height: 100px;
+    justify-content: space-around;
+    /* max-width: 1200px;
+    margin: auto; */
+  }
+  .navbar-desktop{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .list-desktop-navbar{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+  }
+  .list-desktop-navbar li a{
+    font-size: 20px;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: orange;
+  }
+  .boton-khaby-second {
+    border: 3px solid orange;
+    width: 40%;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px 25px;
+    box-sizing: border-box;
+  }
+  .boton-khaby-second a{
+    text-decoration: none;
+  }
   /*Home*/
   .home{
     justify-content: center;
@@ -588,55 +675,4 @@ footer{
   .img-khaby-fornite{
     left: 15%;
   }
-}
-@media(max-width:900px) {
-  header {
-    padding: 0px 30px;
-  }
-
-  .bars {
-    display: block;
-    cursor: pointer;
-  }
-
-  .bars .line {
-    width: 30px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 6px 0px;
-  }
-
-  .nav_bar {
-    height: 0px;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    background-color: #2e2f34;
-    transition: 0.5s;
-    overflow: hidden;
-  }
-
-  .nav_bar.active {
-    height: 450px;
-  }
-
-  .nav_bar ul {
-    display: block;
-    width: fit-content;
-    margin: 80px auto 0 auto;
-    text-align: center;
-    transition: 0.5s;
-    opacity: 0;
-  }
-
-  .nav_bar.active ul {
-    opacity: 1;
-  }
-
-  .nav_bar ul li a {
-    margin-bottom: 20px;
-  }
-  
 }

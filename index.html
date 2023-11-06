@@ -36,48 +36,60 @@
     <title>Khaby MemeCoin 3.0</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
 
     <!--NavBar Inicio-->
-    <header>
-        <div class="logo">
-            <a href=""><img src="img/logo completo.png" alt="logo khaby" class="uno_logo"></a>
+        <div class="navBar-general">
+            <div class="logo" data-aos="fade-right" data-aos-delay="100">
+                <a href=""><img src="img/logo completo.png" alt="logo khaby" class="uno_logo"></a>
+            </div>
+            <div class="bars">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav_bar">
+                <ul>
+                    <li>
+                        <a href="#home" class="active">Start</a>
+                    </li>
+                    <li>
+                        <a href="#tokenomic">TOKENOMIC</a>
+                    </li>
+                    <li>
+                        <a href="#roumap">ROUMAP</a>
+                    </li>
+                    <li>
+                        <a href="#buykhaby">BUY KHABY</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navbar-desktop">
+                <ul class="list-desktop-navbar" data-aos="fade-left" data-aos-delay="100">
+                    <li>
+                        <a href="#home" class="active">Start</a>
+                    </li>
+                    <li>
+                        <a href="#tokenomic">TOKENOMIC</a>
+                    </li>
+                    <li>
+                        <a href="#roumap">ROUMAP</a>
+                    </li>
+                </ul>
+                <div class="boton-khaby-second" data-aos="fade-left" data-aos-delay="100">
+                    <a href="#buykhaby">
+                        <h1 class="title-boton-khaby-first">COMPRAR KHABY</h1>
+                    </a>
+                </div>
+            </nav>
         </div>
-        <div class="bars">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-
-        <nav class="nav_bar">
-            <ul>
-                <li>
-                    <a href="#" class="active">Start</a>
-                </li>
-                <li>
-                    <a href="#tokenomic">TOKENOMIC</a>
-                </li>
-                <li>
-                    <a href="#roumap">ROUMAP</a>
-                </li>
-                <li>
-                    <a href="#buykhaby">BUY KHABY</a>
-                </li>
-
-            </ul>
-        </nav>
-
-
-    </header>
-
     <!--NavBar Fin-->
 
     <main>
-
         <!--Inicio del codigo Parte 1 de la pagina-->
-        <section class="home">
+        <section class="home" id="home">
             <div class="boton-khaby-first" data-aos="fade-left" data-aos-delay="100">
-                <h1 class="title-boton-khaby-first" >COMPRAR KHABY</h1>
+                <h1 class="title-boton-khaby-first">COMPRAR KHABY</h1>
             </div>
             <h1 class="title-token-number" data-aos="fade-left" data-aos-delay="100">CONTRATO</h1>
             <div class="container-token-title-number" data-aos="fade-left" data-aos-delay="100">
@@ -108,7 +120,8 @@
             </div>
             <div class="container-title-text-grafic">
                 <h1 class="title-tokenomic" data-aos="fade-up">TOKENOMIC</h1>
-                <p class="text-tokenomic" data-aos="fade-up" data-aos-delay="100">El lanzamiento del token $kby ayudará a sostener el crecimiento de la
+                <p class="text-tokenomic" data-aos="fade-up" data-aos-delay="100">El lanzamiento del token $kby ayudará
+                    a sostener el crecimiento de la
                     comunidad de de khaby Memes y
                     recompensará a los miembros leales.</p>
                 <div class="container-grafic-text" data-aos="fade-up" data-aos-delay="100">
@@ -124,7 +137,7 @@
         <!--Inicio de Codigo de "ROUMAP"-->
         <section class="roumap" id="roumap">
             <h1 class="title-roumap" data-aos="fade-up">ROUMAP</h1>
-            <div class="container-three-fase" data-aos="fade-up" >
+            <div class="container-three-fase" data-aos="fade-up">
                 <div class="box-fase-one-two-three first-back" data-aos="fade-up">
                     <div class="box-img-title-fase">
                         <div class="box-img-khaby-fase">
@@ -176,7 +189,7 @@
 
         <!--Inicio de Codigo de "Como Comprar"-->
         <section class="shop-token" id="buykhaby">
-            <h1 class="title-shop" data-aos="fade-up" >COMO COMPRAR</h1>
+            <h1 class="title-shop" data-aos="fade-up">COMO COMPRAR</h1>
             <div class="container-shop-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="box-shop-one-two-three back-first" data-aos="fade-up" data-aos-delay="100">
                     <img src="https://limachi92-org.my.canva.site/new-products-and-services-business-website-in-violet-dark-blue-neon-pink-gradient-tech-style-website/images/5b2c51911811e2a871e5866d7a17913a.svg"
@@ -209,20 +222,23 @@
 
         <!--Inicio de Codigo de "Reinado de Khaby"-->
         <section class="king-khaby">
-            <h1 class="title-king" data-aos="fade-up" >EL REINADO DE KHABY</h1>
+            <h1 class="title-king" data-aos="fade-up">EL REINADO DE KHABY</h1>
             <div class="container-king-divs" data-aos="fade-up" data-aos-delay="100">
                 <!-- <img src="/img/khaby-fornite.png" alt=""> -->
                 <img src="https://limachi92-org.my.canva.site/new-products-and-services-business-website-in-violet-dark-blue-neon-pink-gradient-tech-style-website/images/eca248849e7ff23287cf166c80e0ae72.png"
                     alt="">
                 <div class="container-three-color">
                     <div class="color-div second-back">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. vero quod consectetur adipisicing elit. vero quod</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. vero quod consectetur adipisicing
+                            elit. vero quod</p>
                     </div>
                     <div class="color-div first-back">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. vero quod consectetur adipisicing elit. vero quod</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. vero quod consectetur adipisicing
+                            elit. vero quod</p>
                     </div>
                     <div class="color-div three-back">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. vero quod consectetur adipisicing elit. vero quod</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. vero quod consectetur adipisicing
+                            elit. vero quod</p>
                     </div>
                 </div>
             </div>
@@ -231,7 +247,7 @@
 
         <!--Inicio de Codigo de "Redes Sociales"-->
         <section class="contact">
-            <h4 class="first-title-contact-box" data-aos="fade-up" >REDES SOCIALES</h4>
+            <h4 class="first-title-contact-box" data-aos="fade-up">REDES SOCIALES</h4>
             <div>
                 <div class="box-title-number-email" data-aos="fade-up" data-aos-delay="100">
                     <div class="box-icon">
