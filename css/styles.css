@@ -102,6 +102,19 @@ p {
 .nav_bar.active ul {
   opacity: 1;
 }
+.img-language{
+  text-decoration: none;
+  margin: 5px 15px;
+}
+.img-language img{
+  border-radius: 50%;
+  width: 50px;
+  padding: 5px;
+  transition: all 0.5s;
+}
+.img-language img:hover{
+  background-color: #ffe00e;
+}
 .scrolled{
   background-color: #2e2f34;
   box-shadow:0px 15px 40px rgba(0,0,0,0.1);
@@ -552,12 +565,10 @@ footer{
   }
   .navBar-general{
     height: 100px;
-    justify-content: space-around;
-    /* max-width: 1200px;
-    margin: auto; */
+    justify-content: space-between;
   }
   .navbar-desktop{
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -575,7 +586,7 @@ footer{
   }
   .list-desktop-navbar li a{
     font-size: 20px;
-    margin: 5px 10px;
+    margin: 5px;
     text-decoration: none;
     color: orange;
   }
@@ -593,6 +604,9 @@ footer{
   }
   .boton-khaby-second a{
     text-decoration: none;
+  }
+  .img-language{
+    margin: 0px;
   }
   /*Home*/
   .home{
@@ -684,6 +698,13 @@ footer{
   }
 }
 @media(min-width:1200px){
+  /* Navbar */
+  .navbar-desktop{
+    justify-content: space-around;
+  }
+  .img-language{
+    margin: 5px;
+  }
   /* TOKENOMIKA */
   .img-khaby-fornite{
     left: 15%;
